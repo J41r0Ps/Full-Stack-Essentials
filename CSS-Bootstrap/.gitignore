@@ -1,0 +1,15 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Node modules (if used)
+node_modules/
+
+# PHP-specific
+*.log
+vendor/
+.env
+
+# Editor files
+.idea/
+.vscode/
