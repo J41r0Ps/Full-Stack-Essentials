@@ -1,0 +1,35 @@
+/* Define variables */
+:root {
+    --primary-color: #3498db;   /* blue */
+    --secondary-color: #2ecc71; /* green */
+    --main-font-size: 18px;
+}
+
+/* Apply variables */
+body {
+    font-size: var(--main-font-size);
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: white;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Override variable inside .box */
+.box {
+    --primary-color: #e74c3c;  /* red */
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin-top: 10px;
+}
