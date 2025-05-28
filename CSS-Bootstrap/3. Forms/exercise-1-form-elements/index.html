@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 1: Form Elements</title>
+</head>
+<body>
+<form action="https://it-fact.be/form.ph" method="post">
+    <p>
+        <label for="name">Username: </label>
+        <input type="text" id="name" name="myName" required minlength="3" maxlength="20" placeholder="Enter your name">
+    </p>
+    <p>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="myEmail" required placeholder="Enter your emial">
+    </p>
+    <p>
+        <label for="comment">Insert a comment</label>
+    </p>
+    <p>
+        <textarea rows="5" cols="30" name="myComment" id="comment"></textarea>
+    </p>
+    <p><label for="projectType">Select a project</label></p>
+    <p>
+        <select name="myProjectType" id="projectType">
+            <option value="p1">Project 1 </option>
+            <option value="p2">Project 2 </option>
+            <option value="p3" selected>Project 3 </option>
+        </select>
+    </p>
+    <p>Select one option</p>
+    <p><input type="radio" id="option1" name="myOption"><label for="option1"> Option 1</label></p>
+    <p><input type="radio" id="option2" name="myOption" checked><label for="option2"> Option 2</label></p>
+    <p>Select multiple options</p>
+    <p><input type="checkbox" name="myOption1" id="option1CheckBox" checked><label for="option1CheckBox" > Option 1</label></p>
+    <p><input type="checkbox" name="myOption2" id="option2CheckBox"><label for="option2CheckBox"> Option 2</label></p>
+    <p><input type="checkbox" name="myOption3" id="option3CheckBox" checked><label for="option3CheckBox"> Option 3</label></p>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
