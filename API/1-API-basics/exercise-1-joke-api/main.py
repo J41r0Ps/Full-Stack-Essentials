@@ -16,7 +16,10 @@ jokes = [
 @app.get("/joke")
 def get_joke(category : str = None):
     if category:
-        filtered_jokes = [j for j in jokes if j["category"].lower() == category.lower()]
+        filtered_jokes = []
+        for joke in jokes:
+            if joke["category"] == category:
+                filtered_jokes.append(joke)
         if not filtered_jokes:
             return {"error":"Category not found"}
         return random.choice(filtered_jokes)
