@@ -18,7 +18,7 @@ def get_joke(category : str = None):
     if category:
         filtered_jokes = []
         for joke in jokes:
-            if joke["category"] == category:
+            if joke["category"].lower() == category.lower():
                 filtered_jokes.append(joke)
         if not filtered_jokes:
             return {"error":"Category not found"}
