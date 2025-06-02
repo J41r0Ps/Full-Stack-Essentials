@@ -1,0 +1,1 @@
+insert_festival_query = "INSERT INTO festivaldb.festival (name, location, startDate, endDate, province, comment) VALUES (%s, %s, %s, %s, %s, %s);"
